@@ -1,0 +1,78 @@
+##########################################
+# Meta
+##########################################
+alias va='vim ~/.aliases'
+alias vb='vim ~/.bashrc'
+alias ve='vim ~/.exports'
+alias vz='vim ~/.zshrc'
+
+alias sa='source ~/.aliases'
+alias sb='source ~/.bashrc'
+alias se='source ~/.exports'
+alias sz='source ~/.zshrc'
+
+##########################################
+# Editing
+##########################################
+# Open all in new tab
+alias vim='vim -p'
+alias v='vim'
+
+##########################################
+# Basic shell stuff
+##########################################
+alias sl='ls'
+alias ls='ls -G'
+alias l='ls -g -a'
+
+alias ,='cd ..'
+alias ,,='cd ../..'
+alias ,,,='cd ../../..'
+alias ,,,,='cd ../../../..'
+
+alias a='ack'
+alias c='cat'
+alias h='head'
+alias h1='head -n 1'
+alias t='tail'
+alias t1='tail -n 1'
+
+alias mv='mv -v'
+alias rm='rm -v'
+alias cp='cp -v'
+
+alias sls='screen -ls'
+alias ss='screen -S'
+alias sr='screen -rx'
+
+# Make pgrep actually useful out of the box
+alias pgrep='pgrep -l -a'
+
+##########################################
+# Python
+##########################################
+alias python='python3'
+
+##########################################
+# Git
+##########################################
+alias gs='git status'
+alias gp='git status'
+alias gci='git commit'
+alias gdi='git diff'
+
+##########################################
+# X
+##########################################
+alias fr='setxkbmap ca -variant fr'
+alias en='setxkbmap us'
+alias us='setxkbmap us'
+alias xup='xrdb -merge ~/.Xresources'
+
+##########################################
+# Math
+##########################################
+# Prints stats summary of stdin
+alias st="Rscript -e 'summary (as.numeric (readlines (\"stdin\")))'"
+# Prints percentiles of stdin
+alias pctl="Rscript -e 'quantile(as.numeric (readLines (\"stdin\")), c(.0,.1,.2,.3,.4,.5,.6,.7,.8,.9,.95,.975,.99,1))'"
